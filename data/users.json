@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@example.com",
+    "password": "mysecretpassword",
+    "age": 30,
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-06T08:12:34.567Z",
+    "tags": [
+      "Sales",
+      "Marketing"
+    ]
+  },
+  {
+    "id": "2",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "janesmith@example.com",
+    "password": "anotherpassword",
+    "age": 26,
+    "address": {
+      "street": "456 Oak St",
+      "city": "Sometown",
+      "state": "NY",
+      "zip": "67890",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-07T09:24:45.678Z",
+    "tags": [
+      "Engineering",
+      "Technology"
+    ]
+  },
+  {
+    "id": "3",
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alicejohnson@example.com",
+    "password": "securepassword123",
+    "age": 35,
+    "address": {
+      "street": "789 Pine St",
+      "city": "AnotherCity",
+      "state": "TX",
+      "zip": "54321",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-08T10:36:56.789Z",
+    "tags": [
+      "Finance",
+      "Accounting"
+    ]
+  },
+  {
+    "id": "4",
+    "firstName": "Bob",
+    "lastName": "Williams",
+    "email": "bobwilliams@example.com",
+    "password": "bobssecret",
+    "age": 28,
+    "address": {
+      "street": "101 Elm St",
+      "city": "Newville",
+      "state": "FL",
+      "zip": "98765",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-09T11:48:07.890Z",
+    "tags": [
+      "Customer Support",
+      "Operations"
+    ]
+  },
+  {
+    "id": "5",
+    "firstName": "Eva",
+    "lastName": "Davis",
+    "email": "evadavis@example.com",
+    "password": "evapassword",
+    "age": 40,
+    "address": {
+      "street": "202 Maple St",
+      "city": "Cityville",
+      "state": "IL",
+      "zip": "13579",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-10T12:59:18.901Z",
+    "tags": [
+      "Product Management",
+      "Research"
+    ]
+  },
+  {
+    "id": "6",
+    "firstName": "Eva",
+    "lastName": "Davis",
+    "email": "evadavis02@example.com",
+    "password": "evapassword",
+    "age": 40,
+    "address": {
+      "street": "202 Maple St",
+      "city": "Cityville",
+      "state": "IL",
+      "zip": "13579",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-10T12:59:18.901Z",
+    "tags": [
+      "Product Management",
+      "Research"
+    ]
+  },
+  {
+    "firstName": "Monika",
+    "lastName": "Harper",
+    "email": "monikaharper@example.com",
+    "password": "mopassword",
+    "age": 22,
+    "address": {
+      "street": "202 Maple St",
+      "city": "Cityville",
+      "state": "IL",
+      "zip": "13579",
+      "country": "USA"
+    },
+    "createdAt": "2023-05-10T12:59:18.901Z",
+    "tags": [
+      "Product Management",
+      "Research"
+    ],
+    "id": "bed342c1-622e-4ff0-a037-efdbae307d0e"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Express - Introduction",
+    "description": "Express - Text",
+    "type": "a",
+    "tags": [
+      "Express.js",
+      "basics"
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Node.js - Basics",
+    "description": "Node.js - Fundamental concepts",
+    "type": "b",
+    "tags": [
+      "Node.js",
+      "Basics",
+      "Programming"
+    ]
+  },
+  {
+    "id": "3",
+    "name": "MongoDB - Quick Start",
+    "description": "MongoDB - Getting started guide",
+    "type": "c",
+    "tags": [
+      "MongoDB",
+      "Database",
+      "NoSQL"
+    ]
+  },
+  {
+    "id": "4",
+    "name": "React - Components",
+    "description": "React - Understanding components",
+    "type": "d",
+    "tags": [
+      "React",
+      "Frontend",
+      "UI"
+    ]
+  },
+  {
+    "id": "5",
+    "name": "JavaScript - Promises",
+    "description": "JavaScript - Deep dive into promises",
+    "type": "e",
+    "tags": [
+      "JavaScript",
+      "Promises",
+      "Async"
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Node.js - Basics",
+    "description": "Node.js - Fundamental concepts",
+    "type": "b"
+  },
+  {
+    "name": "Node.js - Basics",
+    "description": "Node.js - Fundamental concepts",
+    "type": "b",
+    "tags": [
+      "Node.js",
+      "Basics",
+      "Programming"
+    ]
+  }
+]
