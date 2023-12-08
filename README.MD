@@ -10,7 +10,7 @@ The purpose of this project is to demonstrate the use of Express.js for creating
 
 1. **Clone the repository:**
    ```
-   git clone <repository-url>
+   git clone https://github.com/yuliiakaras/express-practice.git
    cd express-practice
    ```
 
@@ -67,7 +67,7 @@ Required properties: `firstName`, `lastName`, `email`, `password`, `address`.
 - **Method:** PATCH
 - **Description:** Update user data by user ID.
 - **Payload Example:**
-  ```json
+  ```
   {
     "email": "mynewemail@example.com"
   }
@@ -129,3 +129,7 @@ Required properties: `name`, `description`, `type`, `tags`.
 ## Error Handling
 
 Custom error-handling middleware is implemented to log errors and return appropriate error responses.
+
+## Request logging
+
+The application incorporates request logging at the application level to provide insights into incoming requests, facilitating monitoring and debugging processes.

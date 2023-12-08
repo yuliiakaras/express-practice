@@ -4,8 +4,8 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 router.use(bodyParser.json());
 
-const {validateNewUser} = require('../middleware/users.middleware')
-const {getUsers, addNewUser, getUserByEmail, editUser, deleteUser} = require('../controllers/users.controller');
+const {validateNewUser} = require('../../middleware/users.middleware')
+const {getUsers, addNewUser, getUserByEmail, editUser, deleteUser} = require('./controller');
 
 router.get('/', getUsers);
 router.post('/', validateNewUser, addNewUser);

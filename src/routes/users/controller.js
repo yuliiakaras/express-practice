@@ -1,4 +1,4 @@
-const {readDataFromFile, writeDataToFile} = require('../helpers/helpers');
+const {readDataFromFile, writeDataToFile} = require('../../helpers/helpers');
 const { v4: uuidv4 } = require('uuid'); 
 
 exports.getUsers = async (req, res, next) => {
@@ -82,7 +82,7 @@ exports.deleteUser = async (req, res, next) => {
 
         if(userIndex !== -1) {
             users.splice(userIndex, 1);
-            await fs.writeFile('./data/users.json', JSON.stringify(users, null, 2), 'utf-8');
+            await writeDataToFile('./data/users.json', users);
             res.json({ message: 'User deleted successfully' });
         } else {
             const error = new Error('User not found');

@@ -1,5 +1,5 @@
 const { v4: uuidv4 } = require('uuid'); 
-const {readDataFromFile, writeDataToFile} = require('../helpers/helpers');
+const {readDataFromFile, writeDataToFile} = require('../../helpers/helpers');
 
 exports.getArticles = async (req, res, next) => {
     try {

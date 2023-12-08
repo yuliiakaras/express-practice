@@ -3,7 +3,7 @@
     "id": "1",
     "firstName": "John",
     "lastName": "Doe",
-    "email": "johndoe@example.com",
+    "email": "mynewemail@example.com",
     "password": "mysecretpassword",
     "age": 30,
     "address": {

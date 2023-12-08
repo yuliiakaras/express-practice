@@ -1,4 +1,4 @@
-const {readDataFromFile} = require('../helpers/helpers');
+const {readDataFromFile} = require('../../helpers/helpers');
 
 exports.getStudents = async (req, res, next) => {
     try {
