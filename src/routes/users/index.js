@@ -1,11 +1,11 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+import bodyParser from 'body-parser';
 
-const bodyParser = require('body-parser');
+const router = Router();
 router.use(bodyParser.json());
 
-const {validateNewUser} = require('../../middleware/users.middleware')
-const {getUsers, addNewUser, getUserByEmail, editUser, deleteUser} = require('./controller');
+import { validateNewUser } from '../../middleware/users.middleware.js';
+import { getUsers, addNewUser, getUserByEmail, editUser, deleteUser } from './controller.js';
 
 router.get('/', getUsers);
 router.post('/', validateNewUser, addNewUser);
@@ -13,4 +13,4 @@ router.get('/:email', getUserByEmail);
 router.patch('/:id', editUser)
 router.delete('/:email', deleteUser)
 
-module.exports = router;
+export default router;

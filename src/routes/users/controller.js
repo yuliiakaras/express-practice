@@ -1,7 +1,7 @@
-const {readDataFromFile, writeDataToFile} = require('../../helpers/helpers');
-const { v4: uuidv4 } = require('uuid'); 
+import { readDataFromFile, writeDataToFile } from '../../helpers/helpers.js';
+import { v4 as uuidv4 } from 'uuid'; 
 
-exports.getUsers = async (req, res, next) => {
+export async function getUsers(req, res, next) {
     try {
         const users = await readDataFromFile('./data/users.json');
         res.json(users);
@@ -11,7 +11,7 @@ exports.getUsers = async (req, res, next) => {
     }
 }
 
-exports.addNewUser = async (req, res, next) => {
+export async function addNewUser(req, res, next) {
     try{
         const users = await readDataFromFile('./data/users.json');
 
@@ -30,7 +30,7 @@ exports.addNewUser = async (req, res, next) => {
     }
 }
 
-exports.getUserByEmail = async (req, res, next) => {
+export async function getUserByEmail(req, res, next) {
     try {
         const users = await readDataFromFile('./data/users.json');
         const userEmail = req.params.email;
@@ -50,7 +50,7 @@ exports.getUserByEmail = async (req, res, next) => {
     }
 }
 
-exports.editUser = async (req, res, next) => {
+export async function editUser(req, res, next) {
     try {
         const users = await readDataFromFile('./data/users.json')
         const userId = req.params.id;
@@ -73,7 +73,7 @@ exports.editUser = async (req, res, next) => {
     }
 }
 
-exports.deleteUser = async (req, res, next) => {
+export async function deleteUser(req, res, next) {
     try {
         const users = await readDataFromFile('./data/users.json');
         const userEmail = req.params.email;

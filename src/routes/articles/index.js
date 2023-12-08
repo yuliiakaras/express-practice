@@ -1,14 +1,14 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+import bodyParser from 'body-parser';
 
-const bodyParser = require('body-parser');
+const router = Router();
 router.use(bodyParser.json());
 
-const {validateNewArticle, validateTypeEdition} = require('../../middleware/articles.middleware')
-const {getArticles, addNewArticle, updateArticleTags } = require('./contoller')
+import { validateNewArticle, validateTypeEdition } from '../../middleware/articles.middleware.js';
+import { getArticles, addNewArticle, updateArticleTags } from './contoller.js';
 
 router.get('/', getArticles);
 router.post('/', validateNewArticle, addNewArticle);
 router.patch('/:id', validateTypeEdition, updateArticleTags);
 
-module.exports = router;
+export default router;

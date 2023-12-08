@@ -1,6 +1,6 @@
-const {readDataFromFile} = require('../../helpers/helpers');
+import { readDataFromFile } from '../../helpers/helpers.js';
 
-exports.getStudents = async (req, res, next) => {
+export async function getStudents(req, res, next) {
     try {
         const students = await readDataFromFile('./data/studentStatistics.json');
         res.json(students);
@@ -10,7 +10,7 @@ exports.getStudents = async (req, res, next) => {
     }
 }
 
-exports.findWorstScore = async (req, res, next) => {
+export async function findWorstScore(req, res, next) {
     try {
         const students = await readDataFromFile('./data/studentStatistics.json');
 

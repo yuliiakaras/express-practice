@@ -1,11 +1,11 @@
-const {validateContent} = require('../helpers/validation')
+import { validateContent } from '../helpers/validation.js';
 
-module.exports.validateNewArticle = (req, res, next) => {
+export function validateNewArticle(req, res, next) {
     const requiredProperties = ['name', 'description', 'type', 'tags'];
     validateContent(req, res, next, requiredProperties); 
 }
 
-module.exports.validateTypeEdition = (req, res, next) => {
+export function validateTypeEdition(req, res, next) {
     const requiredProperties = ['tags'];
     validateContent(req, res, next, requiredProperties); 
 }

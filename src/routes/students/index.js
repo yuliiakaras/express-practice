@@ -1,9 +1,9 @@
-const express = require('express');
-const router = express.Router();
+import { Router } from 'express';
+const router = Router();
 
-const {getStudents, findWorstScore} = require('./controller')
+import { getStudents, findWorstScore } from './controller.js';
 
 router.get('/', getStudents);
 router.get('/worst-homework', findWorstScore);
 
-module.exports = router;
+export default router;

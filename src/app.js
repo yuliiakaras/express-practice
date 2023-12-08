@@ -1,24 +1,24 @@
-const express = require('express');
+import express from 'express';
 
 const app = express();
 const port = 3000;
 
-const {requestLogger} = require('./middleware/logger.middleware');
+import requestLogger from './middleware/logger.middleware.js';
 app.use(requestLogger);
 
-const bodyParser = require('body-parser');
+import bodyParser from 'body-parser';
 app.use(bodyParser.json());
 
-const usersRouter = require('./routes/users/index');
+import usersRouter from './routes/users/index.js';
 app.use('/users', usersRouter);
 
-const studentsRouter = require('./routes/students/index')
+import studentsRouter from './routes/students/index.js';
 app.use('/students', studentsRouter);
 
-const articlesRouter = require('./routes/articles/index')
+import articlesRouter from './routes/articles/index.js';
 app.use('/articles', articlesRouter);
 
-const {errorHandler} = require('./middleware/errors.middleware')
+import { errorHandler } from './middleware/errors.middleware.js';
 app.use(errorHandler);
 
 app.listen(port, () => {

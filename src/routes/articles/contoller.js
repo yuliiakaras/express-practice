@@ -1,7 +1,7 @@
-const { v4: uuidv4 } = require('uuid'); 
-const {readDataFromFile, writeDataToFile} = require('../../helpers/helpers');
+import { v4 as uuidv4 } from 'uuid'; 
+import { readDataFromFile, writeDataToFile } from '../../helpers/helpers.js';
 
-exports.getArticles = async (req, res, next) => {
+export async function getArticles(req, res, next) {
     try {
         const articles = await readDataFromFile('./data/articles.json');
         res.json(articles);
@@ -10,7 +10,7 @@ exports.getArticles = async (req, res, next) => {
     }
 }
 
-exports.addNewArticle = async (req, res, next) => {
+export async function addNewArticle(req, res, next) {
     try {
         const articles = await readDataFromFile('./data/articles.json');
         const newArticle = req.body;
@@ -26,7 +26,7 @@ exports.addNewArticle = async (req, res, next) => {
     }
 }
 
-exports.updateArticleTags = async (req, res, next) => {
+export async function updateArticleTags(req, res, next) {
     try {
         const articles = await readDataFromFile('./data/articles.json');
         const articleId = req.params.id;
