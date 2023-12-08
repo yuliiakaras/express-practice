@@ -5,8 +5,7 @@
     "description": "Express - Text",
     "type": "a",
     "tags": [
-      "Express.js",
-      "basics"
+      "ssjsjs"
     ]
   },
   {
@@ -51,22 +50,6 @@
       "JavaScript",
       "Promises",
       "Async"
-    ]
-  },
-  {
-    "id": "6",
-    "name": "Node.js - Basics",
-    "description": "Node.js - Fundamental concepts",
-    "type": "b"
-  },
-  {
-    "name": "Node.js - Basics",
-    "description": "Node.js - Fundamental concepts",
-    "type": "b",
-    "tags": [
-      "Node.js",
-      "Basics",
-      "Programming"
     ]
   }
 ]
